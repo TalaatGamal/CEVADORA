@@ -1,0 +1,153 @@
+
+.home{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 30vh;
+    overflow: hidden;
+}
+.home .text{
+    /* background-color: #000000; */
+    min-width: 400px;
+    max-width: 600px;
+    line-height: 33px;
+    text-align: center;
+}
+.home .text h2{
+    font-size: 33px;
+}
+.home .text .tr{
+    /* background-color: #001e2f6e;
+    border: #00d7d000 solid 4px;
+    border-bottom: #00e5ff solid 4px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.tr span{
+    animation: s-text 2s infinite linear;
+        font-size: 25px;
+}
+@keyframes s-text {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.home .line-1{
+    width: 100vw;
+    height: 50px;
+    /* background-color: #00a282; */
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.cat{
+    /* background-color: #004644; */
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-line{
+    background-color: #ffffff;
+    width: 80px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    animation: fi-l 15s infinite linear;
+}
+@keyframes fi-l {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    /* 100%{
+        transform: rotate(0deg);
+    } */
+}
+.ani-line{
+    /* background-color: #00ffaa; */
+    width: 100%;
+    height: 10px;
+    animation: ani-l 10s infinite linear;
+    border-radius: 3px;
+}
+@keyframes ani-l {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    /* 100%{
+        transform: rotate(0deg);
+    } */
+}
+.home .line-2{
+    width: 100vw;
+    height: 50px;
+    /* background-color: #00a282; */
+    position: absolute;
+    top: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.home .line-3{
+    width: 100vw;
+    min-height: 300px;
+    /* background-color: #00a282; */
+    position: absolute;
+    top: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 25vw;
+    overflow: hidden;
+}
+.cvs{
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: #0090a0 solid 5px;
+    /* background-image: url(https://static-cse.canva.com/blob/2102105/1131w-T9RPR4DPdiw.jpg); */
+    background-image: url(https://miro.medium.com/v2/resize:fit:720/1*EUwPqeVoV5FLUvBnjkstww.jpeg);
+    /* background-image: url(https://cdn-blog.novoresume.com/articles/ats-friendly-resume-templates/ats-friendly-Skill-Based-Resume-Template.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-cvs{
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 300px;
+    background-color: #003e45c6;
+    border: #0090a0 double 15px;
+    border-radius: 30px;
+    transform: rotate(20deg);
+}

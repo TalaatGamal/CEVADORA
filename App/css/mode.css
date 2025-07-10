@@ -1,0 +1,68 @@
+
+
+:root{
+    --night-color:rgb(188, 212, 214);
+    --day-color:rgb(53, 66, 65);
+}
+/* body{
+    background: linear-gradient(330deg ,#00ffe5 -20% , rgb(0, 0, 0) ,rgb(0, 0, 0) , #00ffe5 115%);
+    color: var(--night-color);
+} */
+body{
+    background: linear-gradient(330deg ,#00d6c1 -30% , #C6D9DA ,#C6D9DA , #00d6c1 125%);
+    color: var(--day-color);
+}
+/* header{
+    background-color: rgba(0, 0, 0, 0.515);
+} */
+header{
+    background-color: rgba(221, 233, 230, 0.515);
+    box-shadow: #0000002e 0px 0px 10px 0px;
+}
+/* .pri{
+    background-color: #006e6b;
+} */
+.pri{
+    background-color: #dee9e9;
+}
+/* header i{
+    color: #74e6ff;
+} */
+header i{
+    color: #418696;
+}
+/* .home .text .tr{
+    background-color: #001e2f6e;
+    border: #00d7d000 solid 4px;
+    border-bottom: #00e5ff solid 4px;
+} */
+.home .text .tr{
+    background-color: #d3d9dca6;
+    border: #00d7d000 solid 4px;
+    border-bottom: #418696 solid 4px;
+        box-shadow: #0000002e 0px 0px 10px 0px;
+}
+/* .ani-line{
+    background-color: #00ffaa;
+} */
+.ani-line{
+    background-color: #418696;
+}
+/* .templ-cards .control .btns h2{
+    background-color: black;
+} */
+.templ-cards .control .btns h2{
+    background-color: #c8d5d776;
+    border: #41869600 solid 5px;
+    border-bottom: #418696 solid 5px;
+    box-shadow: #00000083 0px 0px 10px 0px;
+}
+/* .templ-cards{
+    background-color: rgb(89, 98, 106);
+} */
+.templ-cards{
+    /* background-color: #86CDD1; */
+    background-color: #accacc;
+        box-shadow: #00000083 0px 0px 10px 0px;
+
+}

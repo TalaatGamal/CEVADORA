@@ -1,0 +1,259 @@
+.info{
+    width: 90vw;
+    /* min-height: 50vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    overflow: hidden;
+    /* background-color: #00a2a255; */
+    padding-top: 13vh;
+
+}
+.secs{
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #accacc;
+    box-shadow: #00000083 0px 0px 10px 0px;
+    width: 100%;
+    max-height: 500px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view{
+    background-color: #15949482;
+    width: 50%;
+    min-width: 400px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.view-in{
+    /* background-color: black; */
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+.view-line{
+    /*width 1600 px */
+    /* width: 10px; */
+    height: 350px;
+    /* background-color: #7e191983; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* gap: 20px; */
+    padding: 50px;
+    animation: line-1 50s infinite linear;
+}
+.vl-div{
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 390px;
+    /* background-color: #47360a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+@keyframes line-1 {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(-800px);
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-1600px);
+        opacity: 0;
+    }
+}
+
+
+
+
+.te-carda{
+    width: 230px;
+    min-width: 230px;
+    height: 330px;
+    background-color: #C6D9DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px 0px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 10px 5px;
+}
+.te-carda .cv{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 162, 162, 0.53);
+    border: rgba(0, 162, 162, 0.53) solid 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.te-carda .cv img{
+    width: 95%;
+    /* border-radius: 20px; */
+}
+
+
+
+
+
+
+.t-title{
+    width: 100%;
+    height: 50px;
+    /* background-color: #269a1c; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+.t-title h2{
+    font-size: 35px;
+}
+.text .options{
+    width: 100%;
+    min-width: 400px;
+    min-height: 50px;
+    /* background-color: #269a1c; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.t-info{
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 200px;
+    /* background-color: #00000083; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    text-align: center;
+}
+.text .option-app{
+    width: 90px;
+    height: 85px;
+    background-color: #dedede5e;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.414) 0px 0px 10px 0px;
+}
+.text .option-app i{
+    color: #3d8d8f;
+}
+.info .text .option-app i{
+    font-size: 30px;
+}
+.info .text .option-app h2{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+@keyframes line-2 {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(1000px);
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+.info-tittle{
+    width: 100%;
+    height: 50px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.info-tittle h2{
+    font-size: 30px;
+}
+.info-tittle hr{
+    width: 100px;
+    height: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+.info .text{
+    width: 50%;
+    min-width: 400px;
+    height: 70vh;
+    /* background-color: #00a2a255; */
+}

@@ -1,0 +1,222 @@
+.offers{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 13vh 0px 0px 0px;
+}
+.offer-tittle{
+    width: 100%;
+    height: 50px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.offer-tittle h2{
+    font-size: 30px;
+}
+.offer-tittle hr{
+    width: 100px;
+    height: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+.offers-apps{
+    width: 45%;
+    min-width: 400px;
+    min-height: 80vh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offers-gif{
+    width: 45%;
+    min-width: 400px;
+    min-height: 50vh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ofr-app{
+    width: 550px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: aliceblue; */
+    overflow: hidden;
+    animation: ofr 5s infinite linear;
+}
+@keyframes ofr {
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+.ofr-app .fr-app{
+    min-width: 300px;
+    height: 500px;
+    background-color: #327879;
+    border-radius: 25px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    z-index: 1;
+    border: #12726d double 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 30px 0px 10px 0px;
+
+    font-size: 30px;
+    color: #e1e1e1;
+    overflow: hidden;
+}
+.ofr-app .fr-app h2 i{
+    font-size: 30px;
+}
+#fr-1{
+    position: relative;
+    right: -230px;
+    z-index: 0;
+    background-color:#ACCACC;
+    min-width: 250px;
+    height: 400px;
+    /* transform: rotate(-20deg); */
+    animation: fr1 3s infinite linear;
+}
+@keyframes fr1 {
+    0%{
+            transform: rotate(-30deg);
+    }
+    50%{
+            transform: rotate(-15deg);
+    }
+    100%{
+            transform: rotate(-30deg);
+    }
+}
+#fr-2{
+    position: relative;
+    left: -230px;
+    z-index: 0;
+    background-color: #ACCACC;
+    min-width: 250px;
+    height: 400px;
+    /* transform: rotate(20deg); */
+    animation: fr2 3s infinite linear;
+}
+@keyframes fr2 {
+    0%{
+            transform: rotate(30deg);
+    }
+    50%{
+            transform: rotate(15deg);
+    }
+    100%{
+            transform: rotate(30deg);
+    }
+}
+.ofr-app .fr-app h2{
+    font-size: 40px;
+    color: #e1e1e1;
+}
+.ofr-app .fr-app span{
+    font-size: 15px;
+}
+.ofr-app .fr-app .stars{
+    color: #00fff2;
+    font-size: 25px;
+}
+.ofr-app .fr-app .stars span{
+    font-size: 35px;
+}
+.ofr-app .fr-app .right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-top: 20px; */
+    /* background-color: #e1e1e1; */
+}
+.ofr-app .fr-app .right h3{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    border: #e1e1e100 solid 2px;
+    border-bottom: #e1e1e1 solid 2px;
+    box-shadow: #60fff783 0px 5px 5px 0px;
+    /* background-color: #e1e1e1; */
+    border-radius: 10px;
+}
+.ofr-app .fr-app h1{
+    /* background-color: #6f2121; */
+    font-size: 40px;
+    margin-top: 20px;
+}
+.ofr-app .fr-app h1 span{
+    font-size: 80px;
+    margin-left: 20px;
+    color: #60fff7;
+}
+.offers-gif{
+    /* align-items: start; */
+    padding: 5vh;
+}
+.offers-gif .subs{
+    min-width: 400px;
+    width: 80%;
+    /* background-color: #24828443; */
+    background: linear-gradient(165deg , #30abad , #24828400 50%);
+    padding: 10px;
+    border-radius: 20px;
+}
+.offers-gif .subs h2{
+    font-size: 30px;
+    line-height: 33px;
+}
+.offers-gif .subs button{
+    width: 100%;
+    height: 60px;
+    /* background-color: #24828453; */
+    background-color: #540c0c4b;
+    border: #052e2f00 solid 15px;
+    border-left: #ff0000 solid 15px;
+    border-right: #ff0000 solid 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    text-shadow: #005c57 0px 0px 10px;
+}
+.imas{
+    width: 400px;
+    background-color: #006c2d96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    display: none;
+}
+.offers-gif img{
+    width: 300px;
+    border-radius: 20px;
+}
