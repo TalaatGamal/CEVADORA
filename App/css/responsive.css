@@ -1,0 +1,40 @@
+
+#bars{
+    display: none;
+}
+@media (max-width:1080px) {
+    header{
+    width: 95vw;
+    left: 2.5vw;
+    padding: 0px 20px 0px 20px;
+    }
+    header .logo h2{
+        font-size: 18px;
+    }
+    header .logo .img{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    #bars{
+        display: block;
+        font-size: 20px;
+        color: #000;
+    }
+    .back-main img{
+        display: none;
+    }
+    .home .line-1{
+        display: none;
+    }
+    .home .line-2{
+        display: none;
+    }
+    .home .line-3{
+        top: 65vh;
+    }
+    .home .text h2{
+    font-size: 30px;
+    }
+}
