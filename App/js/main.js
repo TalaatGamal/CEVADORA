@@ -7,12 +7,12 @@ let body = document.getElementById("body")
             header.style.top="10px"
             main.style.marginTop="0vh"
             setTimeout(() => {
-                body.style.overflowY="auto"
+            body.style.overflowY="auto"
+            
             }, 1000);
 
+        
     }; 
-
-
 
 
 
@@ -67,6 +67,8 @@ let body = document.getElementById("body")
 
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    
     let ats = document.getElementById("ats");
     let normal = document.getElementById("normal");
 
@@ -154,3 +156,52 @@ window.addEventListener("scroll", function () {
         }, 100);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.querySelectorAll(".te-card .me").forEach(btn => {
+    btn.addEventListener("click", openChoose);
+    });
+
+    let choose = document.querySelector(".choose")
+    function openChoose() {
+    choose.style.display = "flex";
+    // reflow بسيط علشان الترانزيشن يشتغل
+    choose.offsetHeight;
+    choose.style.width   = "100vw";
+    choose.style.height  = "100vh";
+    choose.style.opacity = "1";
+
+        if (choose.style.display="flex") {
+            body.style.overflowY="hidden"
+        }
+        else{
+            body.style.overflowY="auto"
+        }
+
+    }

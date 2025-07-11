@@ -244,15 +244,18 @@
 }
 .deva form{
     /* background-color: blue; */
+    background: linear-gradient(to bottom , #009696 , rgba(255, 0, 0, 0) 70%);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
 }
 .deva form .title h2{
     font-size: 30px;
-    color: #1e1c1c;
+    color: #ffffff;
 }
 .deva form input{
     width: 290px;
@@ -261,10 +264,10 @@
     border: rgb(222, 222, 222) solid 3.5px;
     padding-left: 10px;
     border-radius: 10px;
-    color: #1e1c1c;
+    color: #ffffff;
 }
 .deva form input::placeholder{
-    color: #1e1c1c;
+    color: #ffffff;
 }
 .deva form textarea{
     width: 290px;
@@ -273,10 +276,10 @@
     border: rgb(222, 222, 222) solid 3.5px;
     padding-left: 10px;
     border-radius: 10px;
-    color: #1e1c1c;
+    color: #ffffff;
 }
 .deva form textarea::placeholder{
-    color: #1e1c1c;
+    color: #ffffff;
 }
 .deva form button{
     width: 290px;

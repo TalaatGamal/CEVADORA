@@ -6,6 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 13vh 0px 0px 0px;
+    overflow: hidden;
 }
 .offer-tittle{
     width: 100%;
