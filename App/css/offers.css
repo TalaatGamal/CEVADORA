@@ -71,7 +71,7 @@
     min-width: 300px;
     height: 500px;
     background-color: #327879;
-    border-radius: 25px;
+    border-radius: 100px 100px 25px 25px;
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
     z-index: 1;
     border: #12726d double 5px;
@@ -98,6 +98,7 @@
     height: 400px;
     /* transform: rotate(-20deg); */
     animation: fr1 3s infinite linear;
+    border-radius: 25px;
 }
 @keyframes fr1 {
     0%{
@@ -119,6 +120,7 @@
     height: 400px;
     /* transform: rotate(20deg); */
     animation: fr2 3s infinite linear;
+    border-radius: 25px;
 }
 @keyframes fr2 {
     0%{

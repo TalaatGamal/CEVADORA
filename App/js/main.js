@@ -119,3 +119,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener("scroll", function () {
+    const topButton = document.querySelector(".top");
+    if (window.scrollY >= window.innerHeight / 6) {
+        topButton.style.display = "flex";
+        setTimeout(() => {
+            topButton.style.opacity="1"
+        }, 100);
+    } else {
+        topButton.style.display = "none";
+        setTimeout(() => {
+            topButton.style.opacity="0"
+        }, 100);
+    }
+});

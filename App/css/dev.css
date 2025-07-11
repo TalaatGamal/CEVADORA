@@ -1,14 +1,16 @@
 .dev{
-    width: 100vw;
-    min-height: 100vh;
-    /* background-color: rgba(255, 0, 0, 0.659); */
+    width: 95vw;
+    min-height: 50vh;
+    background-color: #4b9091;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-wrap: wrap;
     /* padding: 15vh 0px 0px 0px;  */ /*⭐ from tablet size ⭐*/
     gap: 0px;
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
+    border-radius: 30px;
+    padding: 10px;
 }
 .dev-tittle{
     width: 100%;
@@ -21,10 +23,40 @@
 }
 .dev .content{
     display: flex;
-    align-items: start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 0px;
+    background-color: #c6d9dad6;
+    border-radius: 30px;
+    width: 100%;
+    min-height: 400px;
+}
+.dev .content .navi{
+    /* background-color: #1e1c1c6f; */
+    background-color: #00a2a242;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    border: #00858e solid 4px;
+    border-radius: 30px;
+}
+.dev .content .navi h2{
+    border-bottom: #1e1c1c solid 4px;
+    width: 90%;
+    font-size: 25px;
+}
+.dev .content .navi ul{
+    list-style: none;
+    width: 90%;
+}
+.dev .content .navi a{
+    font-size: 25px;
 }
 .dev-tittle h2{
     font-size: 30px;
@@ -37,12 +69,13 @@
     border-radius: 10px;
 }
 .mom{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #418696; */
+    background-color: rgba(31, 119, 125, 0.475);
+    border-radius: 200px;
 }
 .picture{
     width: 390px;
@@ -50,7 +83,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: pic 8s infinite linear;
+    /* animation: pic 8s infinite linear; */
+    /* background-color: #418696; */
 }
 @keyframes pic {
     0%{
@@ -64,28 +98,52 @@
     }
 }
 .dev-img{
-    width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
     border-radius: 5000px;
     border: #418696 solid 5px;
     /* border-bottom: rgb(0, 113, 92) double 10px; */
-    background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid=0.2&permmsgid=msg-a:r8482069493344679307&th=1971f151f1cf475b&view=fimg&disp=thd&attbid=ANGjdJ8OIVU7FiqWUP32HZNQ4CHGfaFTZ7HzRPFZrIZkPKyA8GscrmNXDCWv0xNb59bmELmCRSiqRT7YL3ySU5c836kQ_7V75XjLRZxSNgxJffz8wKGvlR8J1V1u9X8&ats=2524608000000&sz=w1920-h970);
+    /* background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid=0.2&permmsgid=msg-a:r8482069493344679307&th=1971f151f1cf475b&view=fimg&disp=thd&attbid=ANGjdJ8OIVU7FiqWUP32HZNQ4CHGfaFTZ7HzRPFZrIZkPKyA8GscrmNXDCWv0xNb59bmELmCRSiqRT7YL3ySU5c836kQ_7V75XjLRZxSNgxJffz8wKGvlR8J1V1u9X8&ats=2524608000000&sz=w1920-h970);
     background-position: 43% 41%;
-    background-size: 165%;
+    background-size: 165%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* opacity: 90%; */
     /* box-shadow: rgb(100, 100, 100) 10px 5px 10px 5px; */
+    /* background-color: black; */
+    z-index: 1;
+    overflow: hidden;
+}
+.dev-img h3{
+    /* color: #aaaaaa; */
+    background-color: #5dbbbd59;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    text-shadow: #00eeff 0px 0px 5px;
+}
+.dev-img h3 span{
+    font-size: 35px;
+    position: relative;
+    top: -15px;
 }
 .ani-circle{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 90px;
-    border: rgb(0, 200, 167) double 8px;
+    border: rgb(0, 255, 213) double 8px;
     animation:  picture 10s infinite linear;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 @keyframes picture {
     0%{
@@ -96,14 +154,15 @@
     }
 }
 .deva{
-    width: 350px;
+    width: 300px;
     height: 350px;
     display: flex;
-    align-items: start;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     /* flex-wrap: wrap; */
     flex-direction: column;
     /* background-color: #418696; */
+    margin-right: 20px;
 }
 .deva .logo{
     /* background-color: rgb(143, 143, 143); */
@@ -193,25 +252,34 @@
 }
 .deva form .title h2{
     font-size: 30px;
+    color: #1e1c1c;
 }
 .deva form input{
-    width: 330px;
+    width: 290px;
     height: 45px;
     background-color: rgba(240, 248, 255, 0);
-    border: rgb(0, 140, 153) solid 3.5px;
+    border: rgb(222, 222, 222) solid 3.5px;
     padding-left: 10px;
     border-radius: 10px;
+    color: #1e1c1c;
+}
+.deva form input::placeholder{
+    color: #1e1c1c;
 }
 .deva form textarea{
-    width: 330px;
+    width: 290px;
     /* height: 45px; */
     background-color: rgba(240, 248, 255, 0);
-    border: rgb(0, 140, 153) solid 3.5px;
+    border: rgb(222, 222, 222) solid 3.5px;
     padding-left: 10px;
     border-radius: 10px;
+    color: #1e1c1c;
+}
+.deva form textarea::placeholder{
+    color: #1e1c1c;
 }
 .deva form button{
-    width: 330px;
+    width: 290px;
     height: 45px;
     background-color: #418696;
     border: rgba(0, 153, 110, 0) solid 3.5px;

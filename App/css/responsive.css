@@ -37,4 +37,12 @@
     .home .text h2{
     font-size: 30px;
     }
+    .info{
+        width: 100%;
+    }
+    .secs{
+            max-height: max-content;
+            flex-wrap: wrap;
+            padding: 10px;
+    }
 }

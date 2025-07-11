@@ -191,6 +191,11 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    background-color: #5faeaf80;
+    width: max-content;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0px 30px 0px 30px;
 }
 .templ-cards .control h2{
     font-size: 25px;

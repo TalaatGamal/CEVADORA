@@ -163,6 +163,7 @@
 }
 .text .option-app{
     width: 90px;
+    min-width: 90px;
     height: 85px;
     background-color: #dedede5e;
     border-radius: 15px;
