@@ -216,9 +216,12 @@
         border: #4f888c00 solid 3px;
     }
     25%{
-        border: #f2ff00 solid 3px;
+        border: #f2ff00 solid 5px;
     }
-    50%{
+    55%{
+        border: #f2ff00 solid 5px;
+    }
+    65%{
         border: #ff000000 solid 3px;
     }
     100%{
@@ -280,10 +283,11 @@
 .te-card .me{
     width: 90%;
     min-height: 50px;
-    background-color: rgb(0, 162, 162);
+    /* background-color: rgb(0, 162, 162); */
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     border-radius: 10px;
     color: #e8e8e8;
     font-size: 25px;
@@ -291,14 +295,37 @@
     transition: 0.5s;
     border: #4b131300 solid 3px;
     box-shadow: #0000007f 0px 0px 10px 0px;
+    overflow: hidden;
 }
-.te-card .me:hover{
+.te-card .me:hover .che{
     border: #ffffff solid 3px;
-    border-left: #ffffff solid 40px;
-    border-right: #ffffff solid 40px;
+    border-left: #ffffff solid 35px;
+    border-right: #ffffff solid 35px;
     background-color: rgb(22, 91, 84);
 }
 
+.te-card .num-ch{
+    background-color: #009ca7;
+    min-width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.te-card .che{
+    /* background-color: #000000; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 8px;
+    border: #4b131300 solid 3px;
+        background-color: rgb(0, 162, 162);
+
+}
 
 
 

@@ -9,7 +9,7 @@
     color: var(--night-color);
 } */
 body{
-    background: linear-gradient(330deg ,#00d6c1 -30% , #C6D9DA ,#C6D9DA , #00d6c1 125%);
+    background: linear-gradient(330deg ,#00606b -30% , #C6D9DA ,#C6D9DA , #008094 125%);
     color: var(--day-color);
 }
 /* header{
