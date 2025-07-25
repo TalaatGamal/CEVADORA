@@ -11,6 +11,7 @@
     font-style: normal;
     font-variation-settings:"slnt" 0; */
     font-size: 20px;
+    scrollbar-width: none;
 
 }
 /* :root{
@@ -69,6 +70,9 @@ header .logo h2{
     font-style: normal;
     /* background-color: #176273; */
     color: #006860;
+    background: linear-gradient(to right, #009ab2, #00353b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 header .logo .img{
     /* background-image: url(https://cdn-icons-gif.flaticon.com/15557/15557728.gif); */
