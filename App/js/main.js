@@ -17,43 +17,62 @@ let body = document.getElementById("body")
 
 
 
+// let bars    = document.getElementById("bars")
+// let x_mark  = document.getElementById("x-mark")
+// let sidebar = document.getElementById("sidebar")
+
+//     bars.addEventListener("click", function () {
+//         bars === true
+//             sidebar.style.right="0px"
+//             if (sidebar.style.right="0px") {
+//                 if (bars === true) {
+//                     bars.addEventListener("click", function () {
+//                         sidebar.style.right="400px"
+//                     });
+//                 }
+//             }
+//         });
+
+
+
+let bars    = document.getElementById("bars");
+let x_mark  = document.getElementById("x-mark")
+x_mark.style.display="none"
+let side_icon = document.getElementById("side-icon");
+let sidebar = document.getElementById("sidebar");
+
+let sidebarOpen = false;
+
+side_icon.addEventListener("click", function () {
+    if (!sidebarOpen) {
+        sidebar.style.right = "0px";      // افتح
+        sidebarOpen = true;
+        bars.style.display="none"
+        x_mark.style.display="block"
+    } else {
+        sidebar.style.right = "-100vw";   // اقفل (غيّر الرقم حسب حجم السايدبار)
+        sidebarOpen = false;
+        x_mark.style.display="none"
+        bars.style.display="block"
+    }
+});
+
+let side_list = document.querySelectorAll(".side-list li");
+
+side_list.forEach(item => {
+    item.addEventListener("click", function() {
+        // alert("You clicked: " + item.textContent);
+        sidebar.style.right = "-100vw";
+        x_mark.style.display="none"
+        bars.style.display="block"
+    });
+});
 
 
 
 
 
 
-
-
-
-    // let ats = document.querySelectorAll("ats");
-    // let normal = document.getElementById("normal");
-
-    // let ats_btn = document.querySelectorAll("ats-btn");
-    // let normal_btn = document.getElementById("normal-btn");
-
-    //     normal.style.display="flex"
-    //     ats.style.display="none"
-
-    //     ats.addEventListener("click", function() {
-    //         ats.style.display = "flex";
-    //         normal.style.display = "none";
-
-    //         console.log("ats")
-    //     });
-        
-    //     normal.addEventListener("click", function() {
-    //         ats.style.display = "none";
-    //         normal.style.display = "flex";
-
-    //         console.log("normal")
-    //     });
-    //     if (normal.style.display="flex") {
-    //         ats.style.display = "none";
-    //     }
-    //     else{
-    //         ats.style.display="flex"
-    //     }
 
 
 
@@ -243,23 +262,23 @@ window.addEventListener("scroll", function () {
 
 
 
-    document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-        e.preventDefault(); // امنع إعادة تحميل الصفحة
+    // document
+    //     .getElementById("contact-form")
+    //     .addEventListener("submit", function (e) {
+    //     e.preventDefault(); // امنع إعادة تحميل الصفحة
 
-        emailjs
-            .sendForm(
-            "direct-message",   // Service ID
-            "template_dwzuvu4",  // Template ID
-            this                 // العنصر <form> نفسه
-            )
-            .then(() => {
-            alert("تم الإرسال بنجاح 🎉");
-            this.reset();        // امسح الحقول بعد النجاح
-            })
-            .catch((err) => {
-            console.error("EmailJS Error:", err);
-            alert("عذرًا، حدث خطأ أثناء الإرسال ❌");
-            });
-        });
+    //     emailjs
+    //         .sendForm(
+    //         "direct-message",   // Service ID
+    //         "template_dwzuvu4",  // Template ID
+    //         this                 // العنصر <form> نفسه
+    //         )
+    //         .then(() => {
+    //         alert("تم الإرسال بنجاح 🎉");
+    //         this.reset();        // امسح الحقول بعد النجاح
+    //         })
+    //         .catch((err) => {
+    //         console.error("EmailJS Error:", err);
+    //         alert("عذرًا، حدث خطأ أثناء الإرسال ❌");
+    //         });
+    //     });

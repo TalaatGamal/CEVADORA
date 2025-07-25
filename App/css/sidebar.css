@@ -1,0 +1,76 @@
+
+.sidebar{
+    background-color: #00424978;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -100vw;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 40px;
+    color: #ffffff;
+}
+.side-icon{
+    border-radius: 8px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: #00353b00 solid 6px;
+}
+#bars{
+    color: #000000;
+    font-size: 22px;
+}
+#x-mark{
+    color: #000000;
+    font-size: 22px;
+}
+.sidebar h2{
+    font-size: 50px;
+}
+.side-list{
+    width: 380px;
+    min-height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+}
+.side-list h2{
+    font-size: 35px;
+}
+.side-list li{
+    background-color: #dddddd4f;
+    width: 90%;
+    padding: 0px 20px 0px 15px;
+    border-radius: 10px;
+    box-shadow: #00000056 0px 0px 15px 0px;
+    border-left: #ffffffb4 solid 15px; 
+    transition: 0.5s;
+}
+.heart{
+    animation: s-text 2s infinite linear;
+    font-size: 40px;
+}
+.side-list li:hover{
+    background-color: rgb(0, 104, 125);
+}
+.side-list li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}

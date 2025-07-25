@@ -247,6 +247,8 @@
 }
 .info-tittle h2{
     font-size: 30px;
+    min-width: max-content;
+    /* background-color: #00000083; */
 }
 .info-tittle hr{
     width: 100px;

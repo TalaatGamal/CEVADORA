@@ -2,6 +2,9 @@
 #bars{
     display: none;
 }
+.side-icon{
+    display: none;
+}
 @media (max-width:1080px) {
     header{
     width: 95vw;
@@ -19,8 +22,9 @@
     }
     #bars{
         display: block;
-        font-size: 20px;
-        color: #000;
+    }
+    .side-icon{
+        display: flex;
     }
     .back-main img{
         display: none;
@@ -41,9 +45,12 @@
         width: 100%;
     }
     .secs{
-            max-height: max-content;
-            flex-wrap: wrap;
-            padding: 10px;
+        max-height: max-content;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .pri{
+        display: none;
     }
 }
 
@@ -162,4 +169,14 @@
     line-height: 20px;
     }
     
+}
+    
+/* body */
+@media (max-width:1080px) {
+    body{
+        background: linear-gradient(330deg ,#00606b -30% , #C6D9DA ,#C6D9DA , #008094 130%);
+    }
+    .top{
+        right: 0px;
+    }
 }

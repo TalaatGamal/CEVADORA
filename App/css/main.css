@@ -135,6 +135,11 @@ header i{
     width: 100px;
     height: 40px;
     border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .pri:hover::after{
     width: 0px;
