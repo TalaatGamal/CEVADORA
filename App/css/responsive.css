@@ -30,7 +30,15 @@
         display: none;
     }
     .home .line-1{
-        display: none;
+        /* display: none; */
+        top: 18vh;
+    }
+    .cat{
+    width: 200px;
+    /* height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
     }
     .home .line-2{
         display: none;
