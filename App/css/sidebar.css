@@ -53,11 +53,11 @@
     font-size: 30px;
 }
 .side-list li{
-    background-color: #dddddd4f;
+    background-color: #dddddd28;
     width: 90%;
     padding: 0px 20px 0px 15px;
     border-radius: 10px;
-    box-shadow: #00000056 0px 0px 15px 0px;
+    box-shadow: #0000002d 0px 0px 15px 0px;
     border-bottom: #ffffffb4 solid 5px; 
     transition: 0.5s;
 }
