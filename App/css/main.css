@@ -154,7 +154,7 @@ header i{
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: left;
     gap: 50px;
     position: fixed;
@@ -171,11 +171,35 @@ header i{
 .back-main img{
     width: 250px;
     opacity: 40%;
-    box-shadow: #ffffff 0px 0px 5px 5px;
-    border-radius: 50px;
+    /* box-shadow: #ffffff 0px 0px 5px 5px; */
+    border-radius: 40px;
+    animation: back-img 100s infinite linear;
+}
+@keyframes back-img {
+    0%{
+        /* transform: translateX(0px); */
+        transform: translate(0px , 0px)rotate(0deg);
+        opacity: 0;
+    }
+    2%{
+        opacity: 60%;
+    }
+    50%{
+        /* transform: translateX(100px); */
+        transform: translate(1000px , -1000px)rotate(1000deg);
+        opacity: 0;
+    }
+    90%{
+        opacity: 60%;
+    }
+    100%{
+        /* transform: translateX(0px); */
+        transform: translate(0px , -0px)rotate(2000deg);
+        opacity: 0;
+    }
 }
 .main{
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
     /* background-color: #00000033; */
     width: 100vw;
     min-height: 100vh;
