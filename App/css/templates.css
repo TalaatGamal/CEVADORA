@@ -53,9 +53,9 @@
     padding: 15px;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: #12505400;
+    /* background-color: #124f54bd; */
     scrollbar-width: none;
-    border-radius: 50px;
+    border-radius: 20px;
     border: #73b2b600 solid 10px;
     border-right: #4f888c solid 10px;
     border-left: #4f888c solid 10px;
@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: #5faeaf80;
+    /* background-color: #5faeaf80; */
     width: max-content;
     border-radius: 15px;
     overflow: hidden;
@@ -74,6 +74,7 @@
 }
 .templ-cards .control h2{
     font-size: 25px;
+    color: #2b5961;
 }
 .templ-cards .control .btns{
     background-color: #C6D9DA;

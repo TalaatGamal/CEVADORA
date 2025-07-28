@@ -4,8 +4,8 @@ let main = document.getElementById("main")
 let body = document.getElementById("body")
 
     window.onload = function() {
-            header.style.top="10px"
-            main.style.marginTop="0vh"
+                header.style.top="10px"
+                main.style.marginTop="0vh"
             setTimeout(() => {
             body.style.overflowY="auto"
             
@@ -13,6 +13,8 @@ let body = document.getElementById("body")
 
         
     }; 
+
+
 
 
 

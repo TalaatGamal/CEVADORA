@@ -78,12 +78,15 @@ header .logo .img{
     /* background-image: url(https://cdn-icons-gif.flaticon.com/15557/15557728.gif); */
     /* background-image: url(https://cdn-icons-png.flaticon.com/128/9750/9750857.png); */
     /* background-image: url(https://cdn-icons-png.flaticon.com/128/4213/4213056.png); */
-    background-image: url(https://cdn-icons-png.flaticon.com/128/752/752471.png);
+    /* background-image: url(https://cdn-icons-png.flaticon.com/128/752/752471.png); */
+    background-color: #ffffffb3;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/17727/17727987.png);
     background-position: center;
-    background-size: 100%;
+    background-size: 90%;
     background-repeat: no-repeat;
     width: 45px;
     height: 45px;
+    border-radius: 10px;
     /* border-radius: 10px; */
     /* background-color: #ffffff; */
     /* border-left: white solid 2px; */
@@ -149,27 +152,30 @@ header i{
 }
 .back-main{
     width: 100vw;
-    height: 115vh;
+    height: 100vh;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: left;
+    gap: 50px;
     position: fixed;
     z-index: -1;
     padding: 0px 10vw 0vh 15vw;
 }
 .back-main h2{
-    font-size: 40px;
-    font-style: italic;
+    font-size: 45px;
+    color: #175f63;
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+    /* font-style: italic; */
     /* opacity: 70%; */
 }
 .back-main img{
     width: 350px;
     opacity: 40%;
     box-shadow: #ffffff 0px 0px 10px 10px;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .main{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     /* background-color: #00000033; */
     width: 100vw;
     min-height: 100vh;
