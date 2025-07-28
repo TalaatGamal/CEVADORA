@@ -169,9 +169,9 @@ header i{
     /* opacity: 70%; */
 }
 .back-main img{
-    width: 350px;
+    width: 250px;
     opacity: 40%;
-    box-shadow: #ffffff 0px 0px 10px 10px;
+    box-shadow: #ffffff 0px 0px 5px 5px;
     border-radius: 50px;
 }
 .main{
