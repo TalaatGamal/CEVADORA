@@ -63,7 +63,9 @@
     border: #ffffff00 solid 5px; 
     /* border-bottom: #ffffffb4 solid 5px;  */
     transition: 0.5s;
-    background-color: rgba(0, 72, 87, 0.232);
+    /* background-color: rgba(0, 72, 87, 0.232); */
+    background-color: rgba(194, 246, 244, 0.345);
+    box-shadow: #00000013 5px 5px 5px 0px;
 }
 .heart{
     animation: s-text 2s infinite linear;
