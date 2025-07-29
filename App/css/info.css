@@ -35,6 +35,9 @@
     overflow: hidden;
     border-radius: 20px;
 }
+.view img{
+    background-color: #ffffff;
+}
 .view-in{
     /* background-color: black; */
     width: 100%;

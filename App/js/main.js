@@ -262,25 +262,13 @@ window.addEventListener("scroll", function () {
 
 
 
+    document.getElementById("contact-form").addEventListener("submit", function(event){
+        event.preventDefault();
 
-
-    // document
-    //     .getElementById("contact-form")
-    //     .addEventListener("submit", function (e) {
-    //     e.preventDefault(); // امنع إعادة تحميل الصفحة
-
-    //     emailjs
-    //         .sendForm(
-    //         "direct-message",   // Service ID
-    //         "template_dwzuvu4",  // Template ID
-    //         this                 // العنصر <form> نفسه
-    //         )
-    //         .then(() => {
-    //         alert("تم الإرسال بنجاح 🎉");
-    //         this.reset();        // امسح الحقول بعد النجاح
-    //         })
-    //         .catch((err) => {
-    //         console.error("EmailJS Error:", err);
-    //         alert("عذرًا، حدث خطأ أثناء الإرسال ❌");
-    //         });
-    //     });
+        emailjs.sendForm("direct-message", "template_dwzuvu4", this)
+        .then(function() {
+            alert("Message sent successfully!");
+        }, function(error) {
+            alert("Failed to send message: " + JSON.stringify(error));
+        });
+    });

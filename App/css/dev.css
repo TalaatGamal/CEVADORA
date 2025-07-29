@@ -138,6 +138,7 @@
     justify-content: start;
     flex-direction: column;
     gap: 5px;
+    /* background-color: #56b1b77b; */
 }
 .xv form input{
     width: 90%;
@@ -180,6 +181,10 @@
     color: #ffffff;
     box-shadow: #00ffd5 0px 0px 5px 0px;
     border: #000000 solid 2.5px;
+}
+.xv form button{
+    background-color: #00000000;
+    border: none;
 }
 .logo-footer{
     /* background-color: #ffffff7e; */
