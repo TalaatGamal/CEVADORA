@@ -8,7 +8,6 @@ let body = document.getElementById("body")
                 main.style.marginTop="0vh"
             setTimeout(() => {
             body.style.overflowY="auto"
-            
             }, 1000);
 
         
@@ -51,11 +50,13 @@ side_icon.addEventListener("click", function () {
         sidebarOpen = true;
         bars.style.display="none"
         x_mark.style.display="block"
+        main.style.overflow="hidden"
     } else {
         sidebar.style.right = "-100vw";   // اقفل (غيّر الرقم حسب حجم السايدبار)
         sidebarOpen = false;
         x_mark.style.display="none"
         bars.style.display="block"
+        main.style.overflow="auto"
     }
 });
 
