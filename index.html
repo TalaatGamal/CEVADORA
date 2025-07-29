@@ -431,7 +431,15 @@
                             <input type="email" name="user_email" required placeholder="Your Email">
                             <div class="msg">
                                 <textarea name="message" required placeholder="Your Message"></textarea>
-                                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                <button type="submit">
+                                    <i class="fa-solid fa-arrow-right" id="arrow_icon"></i>
+                                    <!-- send -->
+                                    <i class="fa-solid fa-check" id="send"></i>
+                                    <!-- not send -->
+                                    <i class="fa-solid fa-xmark" id="not_send"></i>
+                                    <!-- loader -->
+                                    <div id="loader"></div>
+                                </button>
                             </div>
                         </form>
 

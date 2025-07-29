@@ -264,11 +264,27 @@ window.addEventListener("scroll", function () {
 
     document.getElementById("contact-form").addEventListener("submit", function(event){
         event.preventDefault();
+        let arrow_icon = document.getElementById("arrow_icon")
+        let send = document.getElementById("send")
+        let not_send = document.getElementById("not_send")
+        let loader = document.getElementById("loader")
+
+        loader.style.display = "block";
+        arrow_icon.disabled = true;
 
         emailjs.sendForm("direct-message", "template_dwzuvu4", this)
         .then(function() {
-            alert("Message sent successfully!");
+            loader.style.display = "none";
+            arrow_icon.style.display="none"
+            send.style.display="flex"
         }, function(error) {
-            alert("Failed to send message: " + JSON.stringify(error));
+            loader.style.display = "none";
+            arrow_icon.style.display="none"
+            not_send.style.display="flex"
         });
+        if (loader.style.display = "block") {
+            arrow_icon.style.display="none"
+            send.style.display="none"
+            not_send.style.display="none"
+        }
     });
