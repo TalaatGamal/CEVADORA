@@ -5,6 +5,9 @@
 .side-icon{
     display: none;
 }
+.mob-th{
+    display: none;
+}
 @media (max-width:1080px) {
     header{
     width: 95vw;
@@ -53,8 +56,17 @@
         flex-wrap: wrap;
         padding: 10px;
     }
+    .mob-th{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
     .pri{
         display: none;
+    }
+    .pri2{
+        display: flex;
     }
 }
 
@@ -164,6 +176,19 @@
     .te-card .cv img{
         width: 93%;
         border-radius: 7px;
+    }
+    .choose .c-in{
+        padding: 10px;
+        border-radius: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .c-in-view img{
+        width: 100%;
+        min-width: 350px;
+    }
+    .c-in-command h2{
+        width: 370px;
     }
 }
     

@@ -133,6 +133,16 @@ header i{
     padding-right: 4px;
     font-size: 18px;
 }
+.pri2{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .pri{
     /* background-color: #006e6b; */
     width: 100px;

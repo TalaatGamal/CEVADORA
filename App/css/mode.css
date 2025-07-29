@@ -16,13 +16,13 @@ body{
     background-color: rgba(0, 0, 0, 0.515);
 } */
 header{
-    background-color: rgba(221, 233, 230, 0.515);
+    background-color: #c2dadab4;
     box-shadow: #0000002e 0px 0px 10px 0px;
 }
 /* .pri{
     background-color: #006e6b;
 } */
-.pri{
+.pri,.pri2{
     background-color: #dee9e9;
 }
 /* header i{

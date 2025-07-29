@@ -1,6 +1,6 @@
 
 .sidebar{
-    background-color: #00424978;
+    background-color: #adc9c2af;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -15,7 +15,8 @@
     justify-content: start;
     flex-direction: column;
     gap: 40px;
-    color: #ffffff;
+    /* color: #001e21d7; */
+    color: #163c42;
 }
 .side-icon{
     border-radius: 8px;
@@ -45,7 +46,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     list-style: none;
     padding: 20px 0px 20px 0px;
 }
@@ -54,13 +55,15 @@
 }
 .side-list li{
     /* background-color: #47868b7b; */
-    width: 90%;
+    width: 95%;
     padding: 0px 20px 0px 15px;
-    border-radius: 15px 15px 0px 15px;
+    /* border-radius: 15px 15px 0px 15px; */
+    border-radius: 15px;
     /* box-shadow: #0000002d 0px 0px 15px 0px; */
     border: #ffffff00 solid 5px; 
-    border-bottom: #ffffffb4 solid 5px; 
+    /* border-bottom: #ffffffb4 solid 5px;  */
     transition: 0.5s;
+    background-color: rgba(0, 73, 87, 0.303);
 }
 .heart{
     animation: s-text 2s infinite linear;
@@ -74,4 +77,16 @@
     align-items: center;
     justify-content: space-between;
     font-size: 30px;
+}
+.side-list li a spana{
+    background-color: #ffffffad;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-right: 5px;
+    border-radius: 10px;
+    color: #001e21d7;
 }
