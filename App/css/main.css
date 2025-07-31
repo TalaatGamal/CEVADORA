@@ -254,3 +254,18 @@ footer{
     justify-content: center;
     gap: 20px;
 }
+.new-img{
+    display: none;
+    width: 90%;
+    margin-top: 10vh;
+    opacity: 80%;
+    border-radius: 30px;
+    /* background-color: #00828e; */
+    border: #006e7b double 6px;
+    transform: scaleX(-1);
+}
+@media (max-width:800px) {
+    .new-img{
+        display: block;
+    }
+}
