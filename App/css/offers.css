@@ -226,3 +226,42 @@
     width: 300px;
     border-radius: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offer-section-cover{
+    background-color: #001f24d4;
+    width: 90%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 9;
+    margin-top: -50px;
+    /* top: 0px;
+    left: 0px; */
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.offer-section-cover h2{
+    color: #ffffff;
+    font-size: 70px;
+    border-bottom: #ffffff double 10px;
+}
+cs-2{
+    display: none;
+}

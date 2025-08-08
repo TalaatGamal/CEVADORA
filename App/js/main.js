@@ -209,14 +209,15 @@ window.addEventListener("scroll", function () {
     document.querySelectorAll(".te-card .me").forEach(btn => {
     btn.addEventListener("click", openChoose);
     });
-
+    
     let choose = document.querySelector(".choose")
+    
     function openChoose() {
     choose.style.display = "flex";
     // reflow بسيط علشان الترانزيشن يشتغل
     choose.offsetHeight;
     choose.style.width   = "100vw";
-    choose.style.height  = "100vh";
+    // choose.style.height  = "100vh";
     choose.style.opacity = "1";
 
         if (choose.style.display="flex") {
@@ -225,6 +226,34 @@ window.addEventListener("scroll", function () {
         else{
             body.style.overflowY="auto"
         }
+
+    }
+
+
+
+
+
+
+
+    let no = document.getElementById("no")
+    no.addEventListener("click", closeChoose);
+    
+    function closeChoose() {
+    choose.offsetHeight;
+    choose.style.width = "0vw";
+    // choose.style.height  = "100vh";
+
+    setTimeout(() => {
+        choose.style.display = "none";
+        choose.style.opacity = "0";
+
+        if (choose.style.display="none") {
+                body.style.overflowY="auto"
+            }
+        else{
+            body.style.overflowY="hidden"
+            }
+    }, 500);
 
     }
 
@@ -259,33 +288,221 @@ window.addEventListener("scroll", function () {
 
 
 
+let rate_btn = document.getElementById("rate-btn")
+
+    rate_btn.addEventListener("click", openrate);
+    let rate = document.getElementById("rate")
+    function openrate() {
+    rate.style.display = "flex";
+    // reflow بسيط علشان الترانزيشن يشتغل
+    rate.offsetHeight;
+    // rate.style.minHeight   = "100vh";
+    rate.style.width   = "100vw";
+    rate.style.opacity = "1";
+
+        if (rate.style.display="flex") {
+            body.style.overflowY="hidden"
+        }
+        else{
+            body.style.overflowY="auto"
+        }
+
+    }
 
 
 
 
-    document.getElementById("contact-form").addEventListener("submit", function(event){
-        event.preventDefault();
+
+
+
+
+// let next = document.getElementById("next")
+// let back = document.getElementById("back")
+// let line_form = document.getElementById("line-form")
+// let sec_2 = document.getElementById("sec-2")
+
+//     next.addEventListener("click", lineform)
+//     back.addEventListener("click", lineform2)
+
+//     if (next) {
+//         function lineform () {
+//             sec_2.style.marginRight="820px"
+//         }
+//     }
+//     if (back) {
+//         function lineform2 () {
+//             sec_2.style.marginRight="410px"
+//         }
+//     }
+
+
+
+let next = document.getElementById("next");
+let back = document.getElementById("back");
+let send = document.getElementById("send");
+let line_form = document.getElementById("line-form");
+let sec_2 = document.getElementById("sec-2");
+
+// دوال التحريك
+function lineform() {
+    line_form.style.paddingRight = "1180px";
+    back.style.display="flex"
+    setTimeout(() => {
+        back.style.opacity="1"
+    }, 100);
+    send.style.display="flex"
+    next.style.display="none"
+}
+
+function lineform2() {
+    line_form.style.paddingRight = "0px";
+    back.style.opacity="0"
+    setTimeout(() => {
+        back.style.display="none"
+    }, 500);
+    back.style.opacity="0"
+    send.style.display="none"
+    next.style.display="flex"
+}
+
+// ربط الأحداث (مع التأكد إن العناصر موجودة)
+if (next) {
+    next.addEventListener("click", lineform);
+}
+
+if (back) {
+    back.addEventListener("click", lineform2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // document.getElementById("contact-form , rate-form").addEventListener("submit", function(event){
+    //     event.preventDefault();
+    //     let arrow_icon = document.getElementById("arrow_icon")
+    //     let send = document.getElementById("send")
+    //     let not_send = document.getElementById("not_send")
+    //     let loader = document.getElementById("loader")
+
+    //     loader.style.display = "block";
+    //     arrow_icon.disabled = true;
+
+    //     emailjs.sendForm("direct-message", "template_dwzuvu4", this)
+    //     .then(function() {
+    //         loader.style.display = "none";
+    //         arrow_icon.style.display="none"
+    //         send.style.display="flex"
+    //     }, function(error) {
+    //         loader.style.display = "none";
+    //         arrow_icon.style.display="none"
+    //         not_send.style.display="flex"
+    //     });
+    //     if (loader.style.display = "block") {
+    //         arrow_icon.style.display="none"
+    //         send.style.display="none"
+    //         not_send.style.display="none"
+    //     }
+    // });
+
+
+
+
+
+
+
+
+
+
+document.getElementById("contact-form").addEventListener("submit", handleSubmit);
+document.getElementById("rate-form").addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+
         let arrow_icon = document.getElementById("arrow_icon")
+        let arrow_icon2 = document.getElementById("arrow-1")
         let send = document.getElementById("send")
         let not_send = document.getElementById("not_send")
         let loader = document.getElementById("loader")
 
+        let senda = document.getElementById("senda")
+        let not_senda = document.getElementById("not_senda")
+        let loadera = document.getElementById("loadera")
+
         loader.style.display = "block";
+        loadera.style.display = "block";
         arrow_icon.disabled = true;
 
-        emailjs.sendForm("direct-message", "template_dwzuvu4", this)
+        setTimeout(() => {
+                emailjs.sendForm("direct-message", "template_dwzuvu4", this)
         .then(function() {
             loader.style.display = "none";
             arrow_icon.style.display="none"
+            arrow_icon2.style.display="none"
             send.style.display="flex"
+
+            loadera.style.display = "none";
+            senda.style.display="flex"
+
         }, function(error) {
             loader.style.display = "none";
             arrow_icon.style.display="none"
+            arrow_icon2.style.display="none"
             not_send.style.display="flex"
+
+            loadera.style.display = "none";
+            not_senda.style.display="flex"
         });
         if (loader.style.display = "block") {
             arrow_icon.style.display="none"
+            arrow_icon2.style.display="none"
             send.style.display="none"
             not_send.style.display="none"
+
+            senda.style.display="none"
+            not_senda.style.display="none"
         }
-    });
+        }, 100);
+
+
+}

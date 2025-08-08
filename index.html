@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="App/css/dev.css">
     <link rel="stylesheet" href="App/css/sidebar.css">
     <link rel="stylesheet" href="App/css/responsive.css">
+    <link rel="stylesheet" href="App/css/rate.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,8 +82,64 @@
         </ul>
     </div>
     <div class="top">
-        <spanaa><i class="fa-solid fa-heart"></i></spanaa>
+        <spanaa id="rate-btn" style="cursor: pointer;"><i class="fa-solid fa-heart"></i></spanaa>
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <div class="rate" id="rate">
+        <div class="rate-in">
+            <div class="head">
+                <div class="logo">
+                    <a href="index.html"><div class="img"></div><h2>CeVaDORA <span class="s-rate">'s rating</span></h2></a>
+                </div>
+                <div class="dev-logo">Tal<span class="aa-dev">aa</span>t Gamal / <span>Software Engineer</span></div>
+            </div>
+            <div class="content">
+                <div class="in-cont">
+                    <div class="info-rate">
+                    <h2>Your feedback makes me happy and helps me to deliver and develop the best ❤️ <br> <span class="strs">★★<span>★</span>★★</span></h2>
+                    <!-- <img src="https://img.freepik.com/premium-vector/vector-businessman-expressing-thumbs-up-flat-design-style_995281-44848.jpg" alt=""> -->
+                    </div>
+                    <div class="rate-form-v">
+                        <form id="rate-form">
+                                <h2 class="title">Your rating ❤️☺️</h2>
+                                <div class="line-form" id="line-form">
+                                    <div class="sec-1">
+                                        <input type="text" name="user_name" placeholder="your-name" required>
+                                        <input type="email" name="user_email" placeholder="your-email" required>
+                                    </div>
+                                    <div class="sec-2" id="sec-2">
+                                        <span class="strs2">
+                                            <input type="number" name="user_stars" required placeholder="Stars  !!" class="num-input">
+                                            <div class="st-v">★★<span>★</span>★★</div>
+                                        </span>
+                                        <textarea name="user_message" placeholder="your-rate"></textarea>
+                                    </div>
+                                </div>
+                                <div class="nav-btns">
+                                    <div id="back-v">
+                                        <span id="back"><i class="fa-solid fa-hand-point-left"></i> Back</span>
+                                    </div>
+                                    <div id="next-v">
+                                        <span id="next">Next <i class="fa-solid fa-arrow-right"></i></span>
+                                        <span id="send">
+                                            <button type="submit">
+                                                    <span id="t_s">Send</span> <i class="fa-solid fa-arrow-right" id="arrow-1"></i>
+                                                    <!-- sent -->
+                                                <!--Sent --> <i class="fa-solid fa-check" id="senda"></i>
+                                                    <!-- not send -->
+                                                <!--Error --> <i class="fa-solid fa-xmark" id="not_senda"></i>
+                                                    <!-- loader -->
+                                                <!--Load --> <div id="loadera"></div>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <button type="submit">Send</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="back-main">
         <!-- <h2>ENG_Talaat Gamal</h2> -->
@@ -104,8 +161,8 @@
                     <div class="c-in-command">
                         <h2>Do you want to continue with this template?</h2>
                         <div class="answar">
-                            <span class="no">NO <i class="fa-solid fa-xmark"></i></span>
-                            <spana><span class="yes">YES <i class="fa-solid fa-arrow-right"></i></span></spana>
+                            <span class="no" id="no">NO <i class="fa-solid fa-xmark"></i></span>
+                            <spana><span class="yes" id="yes">YES <i class="fa-solid fa-arrow-right"></i></span></spana>
                         </div>
                         <!-- <img src="https://cdn-icons-png.flaticon.com/128/14971/14971838.png" alt=""> -->
                         <!-- <img src="App/images/person.png" alt=""> -->
@@ -365,6 +422,26 @@
             
         </section>
         <section class="offers" id="offers">
+            <div class="offer-section-cover" id="offer-section-cover">
+                <h2 class="cs-2">Coming Soon 💤</h2>
+                <h2>Coming Soon 💤</h2>
+                <h2 class="cs-2">Coming Soon 💤</h2>
+            </div>
+            <script>
+                window.addEventListener('load', matchHeights);
+                window.addEventListener('resize', matchHeights);
+
+                function matchHeights() {
+                const div1 = document.getElementById('offers');
+                const div2 = document.getElementById('offer-section-cover');
+                
+                const maxHeight = Math.max(div1.offsetHeight, div2.offsetHeight);
+
+                div1.style.height = maxHeight + 'px';
+                div2.style.height = maxHeight + 'px';
+                }
+
+            </script>
             <div class="offer-tittle">
                 <hr>
                 <h2><i class="fa-solid fa-heart"></i> Offers</h2>
