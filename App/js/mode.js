@@ -19,10 +19,10 @@ let begin_btn = document.getElementById("tr");
         daytime.style.display = "block";
         night.style.display = "none";
 
-        body.style.background="linear-gradient(330deg , #00d6c1 -30% , rgb(0, 0, 0) ,rgb(0, 0, 0) , #00d6c1 125%)";
+        body.style.background="linear-gradient(330deg , #007d8eff -30% , #242424ff , #292929ff , #007d8eff 135%)";
         body.style.color="rgb(188, 212, 214)"
 
-        header.style.background="rgba(0, 0, 0, 0.515)"
+        header.style.background="rgba(0, 91, 91, 0.72)"
 
         pri.style.background="#006e6b"
 
@@ -44,7 +44,7 @@ let begin_btn = document.getElementById("tr");
         night.style.display = "block";
         daytime.style.display = "none";
         
-        body.style.background="linear-gradient(330deg , #00d6c1 -30% , #C6D9DA ,#C6D9DA , #00d6c1 125%)";
+        body.style.background="linear-gradient(330deg , #00606b -30% , #C6D9DA , #C6D9DA , #008094 125%)";
         body.style.color="rgb(53, 66, 65)"
 
         header.style.background="rgba(221, 233, 230, 0.515)"
@@ -107,10 +107,12 @@ let begin_btn2 = document.getElementById("tr");
         daytime2.style.display = "block";
         night2.style.display = "none";
 
-        body.style.background="linear-gradient(330deg , #00d6c1 -30% , rgb(0, 0, 0) ,rgb(0, 0, 0) , #00d6c1 125%)";
+        // body.style.background="linear-gradient(330deg , #00606b -30% , #000000ff , #000000ff , #008094 125%)";
+                body.style.background="linear-gradient(330deg , #007d8eff -30% , #001712ff , #001712ff , #007d8eff 125%)";
+
         body.style.color="rgb(188, 212, 214)"
 
-        header.style.background="rgba(0, 0, 0, 0.515)"
+        header.style.background="rgba(0, 91, 91, 0.72)"
 
         pri2.style.background="#006e6b"
 
@@ -132,7 +134,7 @@ let begin_btn2 = document.getElementById("tr");
         night2.style.display = "block";
         daytime2.style.display = "none";
         
-        body.style.background="linear-gradient(330deg , #00d6c1 -30% , #C6D9DA ,#C6D9DA , #00d6c1 125%)";
+        body.style.background="linear-gradient(330deg , #00606b -30% , #C6D9DA , #C6D9DA , #008094 125%)";
         body.style.color="rgb(53, 66, 65)"
 
         header.style.background="rgba(221, 233, 230, 0.515)"

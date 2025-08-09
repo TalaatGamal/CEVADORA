@@ -252,4 +252,33 @@
     .top{
         right: 0px;
     }
+
+
+    /* rate */
+    .rate-in .head{
+    display: none;
+    }
+    .rate-in .content{
+    background-color:  #d5e0e04d;
+    box-shadow: #00353b7d 0px 0px 10px 0px;
+    width: 100%;
+    border-radius: 30px;
+    /* min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    padding: 0px;
+    overflow: hidden;
+}
+.in-cont{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #13323549; */
+    border-radius: 0px;
+    /* overflow: hidden; */
+}
 }
