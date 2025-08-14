@@ -258,6 +258,34 @@ window.addEventListener("scroll", function () {
     }
 
 
+    
+    
+    let nav_choose = document.getElementById("nav-choose")
+    let yes = document.getElementById("yes")
+    yes.addEventListener("click", open_navChoose);
+    
+    function open_navChoose() {
+    nav_choose.offsetHeight;
+    // choose.style.height  = "100vh";
+    nav_choose.style.display = "flex";
+
+
+    setTimeout(() => {
+    nav_choose.style.width = "100vw";
+        choose.style.opacity = "1";
+        header.style.top="-80px"
+        header.style.transition="0.5s"
+    }, 1);
+
+    setTimeout(() => {
+        window.location.href = "../../Templates/html/first.html";
+    }, 500);
+
+    }
+
+
+
+
 
 
 
@@ -409,40 +437,6 @@ if (back) {
 
 
 
-
-
-
-
-
-
-
-
-    // document.getElementById("contact-form , rate-form").addEventListener("submit", function(event){
-    //     event.preventDefault();
-    //     let arrow_icon = document.getElementById("arrow_icon")
-    //     let send = document.getElementById("send")
-    //     let not_send = document.getElementById("not_send")
-    //     let loader = document.getElementById("loader")
-
-    //     loader.style.display = "block";
-    //     arrow_icon.disabled = true;
-
-    //     emailjs.sendForm("direct-message", "template_dwzuvu4", this)
-    //     .then(function() {
-    //         loader.style.display = "none";
-    //         arrow_icon.style.display="none"
-    //         send.style.display="flex"
-    //     }, function(error) {
-    //         loader.style.display = "none";
-    //         arrow_icon.style.display="none"
-    //         not_send.style.display="flex"
-    //     });
-    //     if (loader.style.display = "block") {
-    //         arrow_icon.style.display="none"
-    //         send.style.display="none"
-    //         not_send.style.display="none"
-    //     }
-    // });
 
 
 

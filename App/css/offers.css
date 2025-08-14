@@ -198,19 +198,22 @@
 .offers-gif .subs h2{
     font-size: 30px;
     line-height: 33px;
+    text-align: center;
+    padding-top: 20px;
 }
 .offers-gif .subs button{
     width: 100%;
     height: 60px;
     /* background-color: #24828453; */
-    background-color: #540c0c4b;
+    background-color: #00ae5d95;
     border: #052e2f00 solid 15px;
-    border-left: #ff0000 solid 15px;
-    border-right: #ff0000 solid 15px;
+    border-left: #008245 solid 15px;
+    border-right: #008145 solid 15px;
     font-size: 25px;
     border-radius: 15px;
     color: #ffffff;
     text-shadow: #005c57 0px 0px 10px;
+    margin-top: 50px;
 }
 .imas{
     width: 400px;

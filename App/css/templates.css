@@ -278,6 +278,7 @@
     border-radius: 40px;
     overflow: hidden;
 }
+
 .c-in-view,.c-in-command{
     width: 47%;
     min-width: 400px;
@@ -391,4 +392,79 @@
     background-color: #ffffff;
     padding: 5px 5px 3px 5px;
     border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-choose{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0vw;
+    z-index: 20;
+    /* width: 0vw; */
+    width: 0vw;
+    height: 100vh;
+    /* opacity: 0; */
+    /* background-color: #000000c1; */
+        background: linear-gradient(330deg ,#00d6c1 -30% , #C6D9DA ,#C6D9DA , #00d6c1 125%);
+    overflow: hidden;
+    /* border-radius: 40px; */
+    transition: 0.5s;
+}
+.nav-choose .nc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* position: fixed;
+    top: 90px;
+    left: 2.5vw;
+    z-index: 10; */
+    position: relative;
+    top: 26px;
+    width: 95vw;
+    min-width: 95vw;
+    min-height: 85vh;
+    max-height: 85vh;
+    background-color: #19909837;
+    /* overflow: hidden; */
+    border-radius: 40px;
+    overflow: hidden;
 }
