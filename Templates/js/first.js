@@ -12,7 +12,7 @@ window.onload = function(){
         co.style.minWidth="85vw"
         
         header.style.top="10px"
-        main.style.marginTop="0vh"
+        // main.style.marginTop="0vh"
     }, 400);
 }
 
