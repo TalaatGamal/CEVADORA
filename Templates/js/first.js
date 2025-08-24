@@ -15,7 +15,7 @@ window.onload = function(){
         co.style.minWidth="90vw"
         co.style.padding="30px"
         co.style.paddingTop="70px"
-        main.style.paddingTop="15vh"
+        main.style.paddingTop="22vh"
         title.style.opacity="1"
         
         header.style.top="10px"
